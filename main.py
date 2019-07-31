@@ -1,5 +1,7 @@
 import cv2, time
 
+first_frame = None
+
 video = cv2.VideoCapture(0)
 
 a = 0
@@ -18,6 +20,6 @@ while True:
     if key == ord('q'):
         break
     
-print(a)
+
 video.release()
 cv2.destroyAllWindows
