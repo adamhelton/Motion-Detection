@@ -1,4 +1,4 @@
-import cv2, time
+import cv2, time 
 
 first_frame = None
 
@@ -38,10 +38,11 @@ while True:
     cv2.imshow('Color Frame', frame)
 
     key = cv2.waitKey(1)
-    print(gray)
+    
 
     if key == ord('q'):
         break
+    print(status)
     
 
 video.release()
